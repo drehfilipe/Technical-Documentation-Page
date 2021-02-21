@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
 <link href="CSS/technical.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+
 <head>
-<nav id="navbar">
-    <header>Blender Manual</header>
-    <ul>
-        <li><a class="nav-link" href="#introduction">Introduction</a></li>
-        <li><a class="nav-link" href="#who_uses_blender">Who uses Blender</a></li>
-        <li><a class="nav-link" href="#key_features">Key Features</a></li>
-        <li><a class="nav-link" href="#kblender_history">Blender’s History</a></li>
-        <li><a class="nav-link" href="#versions">Version/Revision Milestones</a></li>
-    </ul>
-</nav>
+    <nav id="navbar">
+        <header>Blender Manual</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Who_uses_Blender?">Who uses Blender?</a></li>
+            <li><a class="nav-link" href="#Key_Features">Key Features</a></li>
+            <li><a class="nav-link" href="#Blender_History">Blender History</a></li>
+            <li><a class="nav-link" href="#Version/Revision_Milestones">Version/Revision Milestones</a></li>
+            <li><a class="nav-link" href="#Building_on_macOS">Building on macOS</a></li>
+            <li><a class="nav-link" href="#Viewing_the_Local_Manual">Viewing the Local Manual</a></li>
+            <li><a class="nav-link" href="#Building_a_Single_Chapter">Building a Single Chapter</a></li>
+        </ul>
+    </nav>
 </head>
 
 <body>
     <main id="main-doc">
-        <section class="main-section">
-            <header id="introduction">Introduction</header>
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
             <p>Welcome to Blender! Blender is a free and open-source 3D creation suite.</p>
             <p>With Blender, you can create 3D visualizations such as still images, 3D animations, VFX shots, and video
                 editing. It is well suited to individuals and small studios who benefit from its unified pipeline and
@@ -27,14 +36,14 @@
                 OpenGL to provide a consistent experience across all supported hardware and platforms.</p>
             <img id="introduction_img" src="Images/introduction_img01.jpg" alt="Introduction Image">
         </section>
-        <section class="main-section">
-            <header id="who_uses_blender">Who uses Blender?</header>
+        <section class="main-section" id="Who_uses_Blender?">
+            <header>Who uses Blender?</header>
             <p>Blender has a wide variety of tools making it suitable for almost any sort of media production. People
                 and studios around the world use it for hobby projects, commercials, and feature films.</p>
             <p>Check out the User Stories page on the Blender website for more examples.</p>
         </section>
-        <section class="main-section">
-            <header id="key_features">Key Features</header>
+        <section class="main-section" id="Key_Features">
+            <header>Key Features</header>
             <ul>
                 <li><a class="features-list">Blender is a fully integrated 3D content creation suite, offering a broad
                         range of essential tools, including Modeling, Rendering, Animation & Rigging, Video Editing,
@@ -47,10 +56,9 @@
                         extensive list of sites.</a></li>
                 <li><a class="features-list">It has a small executable, which is optionally portable.</a></li>
             </ul>
-            <p>You can download the latest version of Blender here.</p>
         </section>
-        <section class="main-section">
-            <header id="blender_history">Blender's History</header>
+        <section class="main-section" id="Blender_History">
+            <header>Blender History</header>
             <p>In 1988, Ton Roosendaal co-founded the Dutch animation studio NeoGeo. NeoGeo quickly became the largest
                 3D animation studio in the Netherlands and one of the leading animation houses in Europe. NeoGeo created
                 award-winning productions (European Corporate Video Awards 1993 and 1995) for large corporate clients
@@ -98,17 +106,20 @@
                 under the terms of the GNU GPL. Blender development continues to this day, driven by a team of dedicated
                 volunteers from around the world led by Blender’s original creator, Ton Roosendaal.</p>
         </section>
-        <section class="main-section">
-            <header id="versions">Version/Revision Milestones</header>
+        <section class="main-section" id="Version/Revision_Milestones">
+            <header>Version/Revision Milestones</header>
             <p class="version-subtitle">The start!</p>
             <ul>
-                <li><a class="version-list">1.00 – January 1994: Blender in development at animation studio NeoGeo.</a></li>
+                <li><a class="version-list">1.00 – January 1994: Blender in development at animation studio NeoGeo.</a>
+                </li>
                 <li><a class="version-list">1.23 – January 1998: SGI version published on the web, IrisGL.</a></li>
-                <li><a class="version-list">1.30 – April 1998: Linux and FreeBSD version, port to OpenGL and X11.</a></li>
+                <li><a class="version-list">1.30 – April 1998: Linux and FreeBSD version, port to OpenGL and X11.</a>
+                </li>
                 <li><a class="version-list">1.3x – June 1998: NaN founded.</a></li>
                 <li><a class="version-list">1.4x – September 1998: Sun and Linux Alpha version released.</a></li>
                 <li><a class="version-list">1.50 – November 1998: First Manual published.</a></li>
-                <li><a class="version-list">1.60 – April 1999: C-key (new features behind a lock, $95), Windows version released.</a></li>
+                <li><a class="version-list">1.60 – April 1999: C-key (new features behind a lock, $95), Windows version
+                        released.</a></li>
                 <li><a class="version-list">1.6x – June 1999: BeOS and PPC version released.</a></li>
                 <li><a class="version-list">1.80 – June 2000: End of C-key, Blender full freeware again.</a></li>
                 <li><a class="version-list">2.00 – August 2000: Interactive 3D and real-time engine.</a></li>
@@ -118,7 +129,32 @@
                 <li><a class="version-list">2.2x – December 2001: macOS version.</a></li>
             </ul>
         </section>
+        <section class="main-section" id="Building_on_macOS">
+            <header>Building on macOS</header>
+            <p>Converting the RST-files into pretty HTML pages.</p>
+            <p>Open a terminal to the folder <code>~/blender_docs</code> and simply run:</p>
+            <p class="code-line"><code>make</code></p>
+            <p>This is the command you will always use when building the docs. The building process may take several
+                minutes the first time (or after any major changes), but the next time you build it should only take a
+                few seconds.</p>
+        </section>
+        <section class="main-section" id="Viewing_the_Local_Manual">
+            <header>Viewing the Local Manual</header>
+            <p>Once the docs have been built, all the HTML files can be found inside
+                <code>~/blender_docs/build/html</code>. Try
+                opening <code>build/html/index.html</code> in your web browser and read the manual:</p>
+            <p class="code-line"><code>open build/html/index.html</code></p>
+            <p>Now that you are able to build the manual, the next paragraph is about an optional quick build.</p>
+        </section>
+        <section class="main-section" id="Building_a_Single_Chapter">
+            <header>Building a Single Chapter</header>
+            <p>If you are working on a specific chapter of the manual, you can build it quickly using:</p>
+            <p class="code-line"><code>make &lt;chapter name&gt;</code></p>
+            <p>For example, to build only the documentation for the modifiers, use <code>make modifiers</code>. You can then view
+                this quick build by opening <code>build/html/contents_quicky.html</code>.</p>
+            <p>This will build very quickly, but it will mean your next complete build of all the chapters will be slow.</p>
+        </section>
     </main>
 </body>
-
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </html>

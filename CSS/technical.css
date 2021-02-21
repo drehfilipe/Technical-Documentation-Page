@@ -4,38 +4,54 @@
 
 body{
     margin: 0;
+    min-width: 290px;
 }
 
 #navbar{
     position: fixed;
-    width: 520px;
+    width: 590px;
     height: 100%;
-    background-color: #333131;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(0, 17, 36) 0%, rgb(0, 153, 255) 100%);
     border-right: solid;
     color: white;
+    z-index: 2; /* Specify the order of how elements are stacked on top of one another. */
 }
 
 #navbar header{
+    font-family: 'Merriweather Sans', sans-serif;
     font-size: 3.797em;
+    font-weight: 700;
     border-bottom: solid;
     padding-left: 50px;
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 #navbar ul{
     list-style-type: none;
     padding-left: 50px;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 #navbar li{
-    padding-bottom: 30px;
+    border-radius: 50px;
+    border: solid;
+    width: 400px;
+    padding: 18px;
+    margin-bottom: 30px;
+}
+
+#navbar li:hover{
+    background-color: #E27B3F;
 }
 
 .nav-link{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 1.668em;
+    font-size: 1.3em;
+    padding-left: 10px;
     color: white;
 }
 
@@ -44,7 +60,7 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    margin-left: 560px;
+    margin-left: 630px;
     margin-right: 80px;
     text-align: left;
 }
@@ -55,15 +71,152 @@ body{
 }
 
 .main-section header{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
     font-size: 2.531em;
     padding-bottom: 30px;
 }
 
 .main-section p{
+    font-family: 'Merriweather', serif;
+    line-height: 1.7em;
     font-size: 1em;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
 }
 
 #introduction_img{
     width: 100%;
+}
+
+.main-section li{
+    margin-bottom: 10px;
+}
+
+.features-list{
+    font-family: 'Merriweather', serif;
+    line-height: 1.7em;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.version-subtitle{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 700;
+    color: #8b8b8b;;
+}
+
+.version-list{
+    font-family: 'Merriweather', serif;
+    line-height: 1.7em;
+    font-size: 1em;
+    padding-bottom: 50px;
+}
+
+.code-line {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgb(241, 241, 241);
+  border: solid;
+  border-color: rgb(240, 240, 240);
+}
+
+/* Responsive */
+@media screen and (max-width: 1050px){
+    #navbar{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+    
+    #navbar header{
+        text-align: center;
+        padding-left: 0px;
+        margin: auto;
+        padding: 20px;
+    }
+    
+    #navbar ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        padding-top: 40px;
+    }
+    
+    #navbar li{
+        border-radius: 50px;
+        border: solid;
+        width: 300px;
+        padding: 14px;
+        margin-bottom: 30px;
+        margin: 10px;
+    }
+    
+    .nav-link{
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding-left: 10px;
+        color: white;
+    }
+
+    #main-doc{
+        position: absolute;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 510px;
+        margin-right: 45px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 721px){
+    #main-doc{
+        position: absolute;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 810px;
+        margin-right: 45px;
+        text-align: left;
+    }
+    #navbar{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 540px){
+    #main-doc{
+        position: absolute;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 810px;
+        margin-right: 45px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 528px){
+    #main-doc{
+        position: absolute;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 900px;
+        margin-right: 45px;
+        text-align: left;
+    }
 }
