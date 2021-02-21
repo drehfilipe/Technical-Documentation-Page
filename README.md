@@ -2,7 +2,7 @@
 
 ## Introduction
 ### Blender Manual
-> The project aim is to fulfill all the user stories from freeCodecamp project Responsive Web Design Projects - Technical Documentation Page. This is my forth project and part of my learning how to code journey.
+> The project aim is to fulfill all the user stories from freeCodecamp project Responsive Web Design Projects - Technical Documentation Page. This is my fourth project and part of my learning how to code journey.
 
 ## Technologies
 - Visual Studio Code
